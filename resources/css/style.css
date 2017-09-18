@@ -1,0 +1,305 @@
+/* Fonts */
+@font-face {
+  font-family: 'Patua One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Patua One'), local('PatuaOne-Regular'), url(https://fonts.gstatic.com/s/patuaone/v6/yAXhog6uK3bd3OwBILv_SFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v16/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v16/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+html {
+  font-family: 'Roboto';
+  font-size: 16px;
+  text-align: center;
+  color: #302611;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  height: 4rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-left: 1.5rem;
+  align-items: center;
+}
+
+.menu nav {
+  padding-right: 1.5rem;
+  text-align: right;
+}
+
+nav img{
+  visibility: hidden;
+  position: absolute;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.menu span {
+  padding-left: 1rem;
+}
+
+.header {
+  text-align: left;
+  font-family: 'Patua One';
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.header-small {
+  text-align: left;
+  font-family: 'Patua One';
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.sub-header {
+  text-align: left;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sub-header-small {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #1fcc82;
+}
+
+p {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+strong {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 900px) {
+  nav img{
+    visibility: visible;
+    position: static;
+  }
+
+  nav span {
+    visibility: hidden;
+    position: absolute;
+  }
+
+}
+
+.section1 {
+  width: 100%;
+  justify-content: flex-start;
+  background-color: #FFF9E6;
+}
+
+.section1-image {
+  max-width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem;
+}
+
+.section1-image img {
+  width: 100%;
+}
+
+.section1-text {
+  padding-top: 2rem;
+  width: 30%;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.button {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  width: 60%;
+  background-color: #1FCC82;
+  text-align: center;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+}
+
+.section2 {
+  width: 100%;
+  padding: 2rem 1.5rem;
+  justify-content: flex-start;
+}
+
+.section2-feature {
+  text-align: left;
+  width: 60%;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 900px) {
+  .section2-feature {
+    visibility: collapse;
+    position: absolute;
+  }
+
+}
+
+.section2-feature img {
+  width: 100%;
+  height: auto;
+}
+
+.quote {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.section2-all-links {
+  width: 30%;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.section2-links {
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section2-links-left {
+  width: 35%;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.section2-links-left img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  align-content: center;
+}
+
+.section2-links-right a {
+  color: #1FCC82;
+  text-decoration: none;
+}
+
+.section2-links-right a:hover {
+  color: #008c4e;
+  transition: color 0.5s ease;
+}
+
+.section2-links-right {
+  width: 60%;
+  padding-left: 1rem;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.section2-feature video {
+  width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+.section3 {
+align-items: center;
+text-align: center;
+padding: 2rem 4.5rem;
+background-color: #FFF9E6;
+}
+
+.title {
+  padding: 2rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.all-courses {
+  justify-content: space-between;
+}
+
+.courses {
+  flex-flow: column wrap;
+  text-align: left;
+  width: 30%;
+  margin-bottom: 2rem;
+  background-color: #fff;
+}
+
+.course-text {
+  padding: 1rem;
+}
+
+.courses img {
+  height: auto;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.section4 {
+  padding: 2rem 0;
+}
+
+.footer {
+  font-size: 0.8rem;
+  color: #b5b5b5;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #d8d8d8;
+}
+
+.footer a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #1FCC82;
+}
+.footer a:hover {
+  color: #008c4e;
+  transition: color 0.5s;
+}
